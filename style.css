@@ -1,0 +1,27 @@
+/* CUSTOM FONTS */
+@font-face {
+    font-family: 'SailecRegular';
+    src: url('fonts/SailecRegular.ttf');
+}
+
+@font-face {
+    font-family: 'SailecLight';
+    src: url('fonts/SailecLight.ttf');
+}
+
+@font-face {
+    font-family: 'SailecRegular';
+    src: url('fonts/SailecRegular.ttf');
+}
+
+@font-face {
+    font-family: 'SailecMedium';
+    src: url('fonts/SailecMedium.ttf');
+}
+
+@font-face {
+    font-family: 'SailecBold';
+    src: url('fonts/SailecBold.ttf');
+}
+
+/* TOP BANNER */
