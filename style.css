@@ -24,10 +24,6 @@
     src: url('fonts/SailecBold.ttf');
 }
 
-/* TOP BANNER */
-.top-banner {
-    display: none;
-}
 
 /* NAVBAR */
 .navbar-nav {
@@ -229,6 +225,14 @@
     margin: auto;
 }
 
+.service-description .row.top {
+    margin: 50px 0;
+}
+
+.service-description .row.bottom div {
+    margin-bottom: 50px;
+}
+
 .service-description h2 {
     font-family: 'SailecBold','san-serif';
     font-size: 36px;
@@ -236,10 +240,38 @@
     margin-bottom: 20px;
 }
 
-.service-description p {
+.service-description .row.top p {
     font-family: 'SailecLight','san-serif';
     font-size: 20px;
     color: #5b6987;
+}
+
+.service-description h5 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 18px;
+}
+
+.service-description .row.bottom p {
+    font-family: 'SailecRegular','san-serif';
+    font-size: 16px;
+}
+
+.service-description .row.bottom div img {
+    margin-bottom: 20px;
+}
+
+.service-description ul {
+    font-family: 'SailecMedium','san-serif';
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.service-description ul li {
+    padding: 15px 20px;
+}
+
+.service-description ul li a {
+    color: rgba(3, 27, 78, 1);
 }
 
 
@@ -251,12 +283,23 @@
 }
 
 @media screen and (min-width: 992px){
+    /* MOTTO */
     .hero .motto {
         text-align: left;
     }
 
     .hero .motto p {
         width: 90%;
+    }
+
+    /* SERVICE DESCRIPTIO */
+    .service-description ul li {
+        display: block;
+        text-align: left;
+    }
+
+    .service-description .row.bottom {
+        text-align: left;
     }
 }
 
@@ -333,10 +376,9 @@
     }
 }
 
-@media screen and (min-width: 1170px){
+@media screen and (min-width: 1200px){
     /* TOP BANNER */
     .top-banner {
-        display: block;
         font-family: 'SailecMedium','san-serif';
         background-color: #ffffff;
         font-size: 12px;
@@ -344,6 +386,7 @@
         color: #5b6987;
         border-bottom: 1px solid rgb(229,232,237);
         position: fixed;
+        z-index: 1;
         width: 100%;
         top: 0;
     }
