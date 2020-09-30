@@ -254,6 +254,7 @@
 }
 
 .service-description .row.bottom p {
+    /* DA ACCORDPARE */
     font-family: 'SailecRegular','san-serif';
     font-size: 16px;
 }
@@ -343,6 +344,66 @@
     background-color: #0069ff;
 }
 
+/* BUSINESS */
+.business {
+    padding: 100px 50px;
+}
+
+.business .row > div:not(:last-of-type) {
+    margin-bottom: 50px;
+}
+
+.business h5, .business p {
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.business h2 {
+    /* DA ACCORPARE */
+    font-family: 'SailecBold','san-serif';
+    font-size: 36px;
+    color: #031b4e;
+    margin-bottom: 70px;
+}
+
+.business h5 {
+    /* DA ACCORPARE */
+    font-family: 'SailecBold','san-serif';
+    font-size: 18px;
+}
+
+.business p {
+    /* DA ACCORDPARE */
+    font-family: 'SailecRegular','san-serif';
+    font-size: 16px;
+    color: #5b6987;
+}
+
+.business img {
+    /* DA ACCORDPARE */
+    margin-bottom: 20px;
+}
+
+.business a {
+    /* DA ACCORDPARE */
+    font-family: 'SailecMedium','san-serif';
+    font-size: 16px;
+    color: #0069ff;
+}
+
+.business a:hover {
+    text-decoration: none;
+    color: #1633ff
+}
+
+.business a:after {
+    content:'\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin-left: 5px;
+}
+
 
 @media screen and (min-width: 768px){
     .hero .motto h1 {
@@ -359,6 +420,11 @@
 
     .hero .motto p {
         width: 90%;
+    }
+
+    /* BUSINESS */
+    .business .row > div {
+        margin-bottom: 0;
     }
 
     /* SERVICE DESCRIPTIO */
