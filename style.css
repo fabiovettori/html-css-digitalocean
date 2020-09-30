@@ -221,6 +221,7 @@
 }
 
 .service-description .wrapper {
+    /* DA ACCORPARE */
     max-width: 780px;
     margin: auto;
 }
@@ -234,6 +235,7 @@
 }
 
 .service-description h2 {
+    /* DA ACCORPARE */
     font-family: 'SailecBold','san-serif';
     font-size: 36px;
     color: #031b4e;
@@ -280,7 +282,65 @@
 }
 
 .service-description ul li a {
+    color: rgba(3, 27, 78, 0.6);
+}
+
+.service-description ul li a:active {
     color: rgba(3, 27, 78, 1);
+}
+
+/* DEVELOPERS */
+.developers {
+    background-color: #f3f5f9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.developers .top {
+    margin-bottom: 30px;
+}
+
+.developers h2, .developers p {
+    max-width: 780px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.developers h2 {
+    /* DA ACCORPARE */
+    font-family: 'SailecBold','san-serif';
+    font-size: 36px;
+    color: #031b4e;
+}
+
+.developers .row p {
+    font-family: 'SailecLight','san-serif';
+    font-size: 20px;
+    color: #5b6987;
+    margin-top: 30px;
+}
+
+.developers img {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.developers span {
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #0069ff;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.developers span:not(:last-of-type) {
+    margin-right: 6px;
+}
+
+.developers span:first-of-type {
+    background-color: #0069ff;
 }
 
 
