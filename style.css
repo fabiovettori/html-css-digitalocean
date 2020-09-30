@@ -219,6 +219,29 @@
     margin-left: 5px;
 }
 
+/* SERVICE DESCRIPTION */
+.service-description {
+    margin-top: 30px;
+}
+
+.service-description .wrapper {
+    max-width: 780px;
+    margin: auto;
+}
+
+.service-description h2 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 36px;
+    color: #031b4e;
+    margin-bottom: 20px;
+}
+
+.service-description p {
+    font-family: 'SailecLight','san-serif';
+    font-size: 20px;
+    color: #5b6987;
+}
+
 
 @media screen and (min-width: 768px){
     .hero .motto h1 {
