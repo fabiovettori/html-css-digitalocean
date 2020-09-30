@@ -60,6 +60,140 @@
     float: none;
 }
 
+/* MAIN */
+/* MOTTO */
+.hero {
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+    background-size: 140%;
+    background-position: center;
+    margin-top: 64px;
+    padding: 200px 0;
+}
+
+.hero .motto {
+    color: #ffffff;
+}
+
+.hero .motto h1 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 31px;
+}
+
+.hero .motto p {
+    font-family: 'SailecLight','san-serif';
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero .login > div {
+    width: 370px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 0;
+    margin: auto;
+}
+
+.hero .login h5 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 18px;
+    color: #031b4e;
+    padding: 20px 0;
+    margin: 0 0 20px 0;
+    background-color: #f3f5f9;
+    border: 1px solid transparent;
+    border-radius: 10px 10px 0 0;
+}
+
+.hero .login input::placeholder {
+    font-family: 'SailecRegular','san-serif';
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.hero .login input:focus {
+    border-color: #0069ff;
+    outline: #0069ff;
+    box-shadow: none;
+}
+
+.hero .login form {
+    margin: 0 30px;
+}
+
+.hero .login .form-group {
+    margin-bottom: 7px;
+}
+
+.hero .login .form-control {
+    height: 48px;
+    padding: 10px 20px;
+}
+
+.hero .login [type="submit"] {
+    font-family: 'SailecBold','san-serif';
+    background-color: #006aff;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.hero .login .form-button .btn-default {
+    color: #006aff;
+    border: 1px solid #006aff;
+    line-height: 34px;
+}
+
+.hero .login .form-button .btn-default:hover {
+    border-color: #5b6886;
+    color: #363636;
+    background-color: transparent;
+}
+
+.hero .login .form-button .btn-default:first-of-type {
+    float: left;
+    width: calc((100% - 10px) * .8);
+    margin-right: 6px;
+}
+
+.hero .login .form-button .btn-default:last-of-type {
+    float: left;
+    width: calc((100% - 10px) * .2);
+}
+
+.hero .login .form-button .btn-default:first-of-type span {
+    margin-right: 5px;
+}
+
+.hero .login .form-button {
+    margin: 30px;
+}
+
+.hero .login p {
+    font-family: 'SailecRegular','san-serif';
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width: 768px){
+    .hero .motto h1 {
+        font-size: 58px;
+        white-space: pre-line;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .hero .motto {
+        text-align: left;
+    }
+
+    .hero .motto p {
+        width: 90%;
+    }
+}
+
 @media screen and (min-width: 1124px){
     /* NAVBAR */
     .navbar-nav {
@@ -127,7 +261,11 @@
         margin-right: 24px;
     }
 
-
+    /* HERO */
+    .hero {
+    margin-top: 109px;
+    }
+}
 
 @media screen and (min-width: 1170px){
     /* TOP BANNER */
