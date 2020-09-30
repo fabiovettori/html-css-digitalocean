@@ -409,6 +409,58 @@
 }
 
 
+/* DATA-CENTERS */
+.data-centers {
+    padding: 50px 0;
+    background-image: url('https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg');
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.data-centers::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(3, 27, 78, 1);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.data-centers h2, .data-centers p {
+    /* DA ACCORPARE */
+    max-width: 760px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.data-centers h2 {
+    /* DA ACCORPARE */
+    font-family: 'SailecBold','san-serif';
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.data-centers p {
+    /* DA ACCORDPARE */
+    font-family: 'SailecLight','san-serif';
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.data-centers .top a {
+    /* DA ACCORDPARE */
+    font-family: 'SailecRegular','san-serif';
+    font-size: 20px;
+    color: #0069ff;
+}
+
 @media screen and (min-width: 768px){
     .hero .motto h1 {
         font-size: 58px;
