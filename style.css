@@ -176,6 +176,49 @@
     margin-top: 10px;
 }
 
+.hero .login p a {
+    font-family: 'SailecRegular','san-serif';
+    color: #ffffff;
+}
+
+
+/* TRUST BADGES */
+.trust-budges {
+    background-color: #f3f5f9;
+    padding: 70px 0;
+}
+
+.trust-budges h6 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: rgb(91, 105, 135);
+}
+
+.trust-budges a {
+    display: inline-block;
+    font-family: 'SailecMedium','san-serif';
+    font-size: 16px;
+    color: #0069ff;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.trust-budges a:hover {
+    color: #1633ff
+}
+
+.trust-budges img {
+    max-width: 150px;
+}
+
+.trust-budges div a:after {
+    content:'\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin-left: 5px;
+}
+
 
 @media screen and (min-width: 768px){
     .hero .motto h1 {
@@ -194,7 +237,7 @@
     }
 }
 
-@media screen and (min-width: 1124px){
+@media screen and (min-width: 1140px){
     /* NAVBAR */
     .navbar-nav {
         display: block;
@@ -272,6 +315,7 @@
     .top-banner {
         display: block;
         font-family: 'SailecMedium','san-serif';
+        background-color: #ffffff;
         font-size: 12px;
         font-weight: 400;
         color: #5b6987;
