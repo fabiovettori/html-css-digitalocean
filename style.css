@@ -635,14 +635,14 @@ footer {
     text-decoration: none;
 }
 
-.footer-bottom{
+.footer-bottom {
     padding: 50px 0;
     margin: 0 50px;
     border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
 .footer-bottom .credits {
-    float: left;
+    margin-bottom: 15px;
 }
 
 .footer-bottom .credits p {
@@ -651,25 +651,45 @@ footer {
     margin-left: 25px;
 }
 
-.footer-bottom .social {
-    float: right;
-}
-
 .footer-bottom .social a {
     display: inline-block;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-size: 24px;
-    margin-right: 25px;
     padding: 8px 0;
+    vertical-align: middle;
+}
+
+.footer-bottom .social a:not(:last-child) {
+    margin-right: 20px;
 }
 
 .footer-bottom .social a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.footer-bottom .social a img {
-    fill: rgba(255, 255, 255, 0.5);
+.footer-bottom .social a:nth-last-child(2) {
+    width: 24px;
+    height: 40px;
+    background-image: url('/social-icons/glassdoor.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-bottom .social a:nth-last-child(1) {
+    width: 24px;
+    height: 40px;
+    background-image: url('/social-icons/builtin.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-bottom .social a:nth-last-child(2):hover {
+    background-image: url('/social-icons/glassdoor-hover.svg');
+}
+
+.footer-bottom .social a:nth-last-child(1):hover {
+    background-image: url('/social-icons/builtin-hover.svg');
 }
 
 
@@ -682,7 +702,7 @@ footer {
 
     /* FOOTER */
     .footer-top {
-        padding: 50px 100px 50px 200px;
+        padding: 50px;
     }
 
     .footer-top ul {
@@ -731,6 +751,19 @@ footer {
 
     .service-description .row.bottom {
         text-align: left;
+    }
+
+    /* FOOTER */
+    .footer-bottom .credits {
+        text-align: left;
+    }
+
+    .footer-bottom .social {
+        text-align: right;
+    }
+
+    .footer-bottom .credits {
+        margin-bottom: 0;
     }
 }
 
@@ -804,6 +837,11 @@ footer {
     /* HERO */
     .hero {
     margin-top: 109px;
+    }
+
+    /* FOOTER */
+    .footer-top {
+        padding: 50px 100px 50px 200px;
     }
 }
 
