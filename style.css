@@ -668,28 +668,18 @@ footer {
     color: rgba(255, 255, 255, 1);
 }
 
-.footer-bottom .social a:nth-last-child(2) {
-    width: 24px;
+.footer-bottom .social a:last-of-type,  .footer-bottom .social a:nth-last-of-type(2){
     height: 40px;
-    background-image: url('/social-icons/glassdoor.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 0;
 }
 
-.footer-bottom .social a:nth-last-child(1) {
-    width: 24px;
-    height: 40px;
-    background-image: url('/social-icons/builtin.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+.footer-bottom .social a img {
+    filter: invert(52%) sepia(14%) saturate(317%) hue-rotate(184deg) brightness(98%) contrast(83%);
 }
 
-.footer-bottom .social a:nth-last-child(2):hover {
-    background-image: url('/social-icons/glassdoor-hover.svg');
-}
 
-.footer-bottom .social a:nth-last-child(1):hover {
-    background-image: url('/social-icons/builtin-hover.svg');
+.footer-bottom .social a img:hover  {
+    filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(183deg) brightness(100%) contrast(93%);
 }
 
 
