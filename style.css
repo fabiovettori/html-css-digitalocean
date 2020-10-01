@@ -605,10 +605,14 @@ p {
 }
 
 /* FOOTER */
-.footer-top {
+footer {
     font-family: 'SailecRegular','san-serif';
     font-size: 14px;
     background-color: #010e28;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-top {
     padding: 50px;
 }
 
@@ -629,6 +633,43 @@ p {
 .footer-top ul li a:hover {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
+}
+
+.footer-bottom{
+    padding: 50px 0;
+    margin: 0 50px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.footer-bottom .credits {
+    float: left;
+}
+
+.footer-bottom .credits p {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.footer-bottom .social {
+    float: right;
+}
+
+.footer-bottom .social a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    margin-right: 25px;
+    padding: 8px 0;
+}
+
+.footer-bottom .social a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-bottom .social a img {
+    fill: rgba(255, 255, 255, 0.5);
 }
 
 
