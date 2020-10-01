@@ -24,6 +24,31 @@
     src: url('fonts/SailecBold.ttf');
 }
 
+h1 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 31px;
+}
+
+h2 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 36px;
+}
+
+h5 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 18px;
+}
+
+h6 {
+    font-family: 'SailecBold','san-serif';
+    font-size: 14px;
+}
+
+p {
+    font-family: 'SailecLight','san-serif';
+    font-size: 20px;
+}
+
 
 /* NAVBAR */
 .navbar-nav {
@@ -70,13 +95,7 @@
     color: #ffffff;
 }
 
-.hero .motto h1 {
-    font-family: 'SailecBold','san-serif';
-    font-size: 31px;
-}
-
 .hero .motto p {
-    font-family: 'SailecLight','san-serif';
     font-size: 24px;
     margin: 20px 0;
 }
@@ -91,8 +110,6 @@
 }
 
 .hero .login h5 {
-    font-family: 'SailecBold','san-serif';
-    font-size: 18px;
     color: #031b4e;
     padding: 20px 0;
     margin: 0 0 20px 0;
@@ -185,8 +202,6 @@
 }
 
 .trust-budges h6 {
-    font-family: 'SailecBold','san-serif';
-    font-size: 14px;
     margin-bottom: 30px;
     color: rgb(91, 105, 135);
 }
@@ -213,6 +228,7 @@
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     margin-left: 5px;
+    vertical-align: middle;
 }
 
 /* SERVICE DESCRIPTION */
@@ -235,26 +251,15 @@
 }
 
 .service-description h2 {
-    /* DA ACCORPARE */
-    font-family: 'SailecBold','san-serif';
-    font-size: 36px;
     color: #031b4e;
     margin-bottom: 20px;
 }
 
 .service-description .row.top p {
-    font-family: 'SailecLight','san-serif';
-    font-size: 20px;
     color: #5b6987;
 }
 
-.service-description h5 {
-    font-family: 'SailecBold','san-serif';
-    font-size: 18px;
-}
-
 .service-description .row.bottom p {
-    /* DA ACCORDPARE */
     font-family: 'SailecRegular','san-serif';
     font-size: 16px;
 }
@@ -308,15 +313,10 @@
 }
 
 .developers h2 {
-    /* DA ACCORPARE */
-    font-family: 'SailecBold','san-serif';
-    font-size: 36px;
     color: #031b4e;
 }
 
 .developers .row p {
-    font-family: 'SailecLight','san-serif';
-    font-size: 20px;
     color: #5b6987;
     margin-top: 30px;
 }
@@ -364,34 +364,25 @@
 }
 
 .business h2 {
-    /* DA ACCORPARE */
-    font-family: 'SailecBold','san-serif';
-    font-size: 36px;
     color: #031b4e;
     margin-bottom: 70px;
 }
 
 .business h5 {
-    /* DA ACCORPARE */
-    font-family: 'SailecBold','san-serif';
     font-size: 18px;
 }
 
 .business p {
-    /* DA ACCORDPARE */
     font-family: 'SailecRegular','san-serif';
     font-size: 16px;
     color: #5b6987;
 }
 
 .business img {
-    /* DA ACCORDPARE */
     margin-bottom: 20px;
-
 }
 
 .business a {
-    /* DA ACCORDPARE */
     font-family: 'SailecMedium','san-serif';
     font-size: 16px;
     color: #0069ff;
@@ -407,6 +398,7 @@
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     margin-left: 5px;
+    vertical-align: middle;
 }
 
 
@@ -434,32 +426,29 @@
 }
 
 .data-centers h2, .data-centers p {
-    /* DA ACCORPARE */
     max-width: 760px;
     margin: auto;
 }
 
 .data-centers h2 {
-    /* DA ACCORPARE */
-    font-family: 'SailecBold','san-serif';
-    font-size: 36px;
     color: #ffffff;
     margin-bottom: 20px;
 }
 
 .data-centers p {
-    /* DA ACCORDPARE */
-    font-family: 'SailecLight','san-serif';
-    font-size: 20px;
     color: #ffffff;
     margin-bottom: 70px;
 }
 
 .data-centers .top a {
-    /* DA ACCORDPARE */
     font-family: 'SailecRegular','san-serif';
     font-size: 20px;
     color: #0069ff;
+}
+
+.data-centers .top a:hover {
+    text-decoration: none;
+    color: #1633ff;
 }
 
 .data-centers a:after {
@@ -467,6 +456,7 @@
     font-family: "Font Awesome 5 Free";
     font-weight: bold;
     margin-left: 5px;
+    vertical-align: middle;
 }
 
 .data-centers .row.bottom div > * {
@@ -508,16 +498,80 @@
     color: #1633ff;
 }
 
+/* DEVELOPEMENT */
+.developement {
+    background-color: #f3f5f9;
+    padding: 80px 0;
+}
+
+.developement .top {
+    max-width: 760px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.developement .top h2 {
+    margin-bottom: 20px;
+}
+
+.developement .row > span {
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #0069ff;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.developement .row > span:not(:last-of-type) {
+    margin-right: 6px;
+}
+
+.developement .row > span:first-of-type {
+    background-color: #0069ff;
+}
+
+.developement .row > p {
+    margin: 30px auto;
+    max-width: 760px;
+}
+
+.carousel {
+    background-color: #ffffff;
+    border: 1px solid #f3f5f9;
+    box-shadow: 0px 2px 4px rgba(1,14,40,0.05);
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px;
+    color: #5b6987;;
+}
+
+.carousel > span {
+    display: block;
+}
+
+.carousel p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.carousel p span {
+    font-size: 16px;
+    vertical-align: top;
+    color: grey;
+}
+
+.carousel img {
+    max-height: 30px;
+    margin-bottom: 30px;
+}
+
+
 @media screen and (min-width: 768px){
     /* HERO */
     .hero .motto h1 {
         font-size: 58px;
         white-space: pre-line;
-    }
-
-    /* BUSINESS */
-    .business [class*="col-"] {
-        text-align: left;
     }
 }
 
@@ -534,6 +588,11 @@
     /* BUSINESS */
     .business .row > div {
         margin-bottom: 0;
+    }
+
+    /* BUSINESS */
+    .business [class*="col-"] {
+        text-align: left;
     }
 
     /* SERVICE DESCRIPTIO */
@@ -668,6 +727,7 @@
         font-family: "Font Awesome 5 Free";
         font-weight: bold;
         margin-left: 5px;
+        vertical-align: middle;
     }
 
     .top-banner div span {
