@@ -604,6 +604,33 @@ p {
     background-color: rgba(225,225,225,0.9);
 }
 
+/* FOOTER */
+.footer-top {
+    font-family: 'SailecRegular','san-serif';
+    font-size: 14px;
+    background-color: #010e28;
+    padding: 50px 100px 50px 200px;
+}
+
+.footer-top ul {
+    float: left;
+    width: 20%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-top ul li {
+    line-height: 35px;
+}
+
+.footer-top ul li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-top ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
 
 @media screen and (min-width: 768px){
     /* HERO */
