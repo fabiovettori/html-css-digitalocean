@@ -1,4 +1,4 @@
-/* CUSTOM FONTS */
+/* GENERAL SETTINGS */
 @font-face {
     font-family: 'SailecRegular';
     src: url('fonts/SailecRegular.ttf');
@@ -49,8 +49,12 @@ p {
     font-size: 20px;
 }
 
+.pad {
+    padding: 0 25px;
+}
 
-/* NAVBAR */
+
+/* NAVIGATION BAR */
 .navbar-nav {
     display: none;
 }
@@ -75,24 +79,36 @@ p {
 .navbar-default .navbar-toggle {
     display: block;
     margin: 15px;
+    padding: 10px;
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: unset;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #5b6987;
+    margin-top: 4px;
 }
 
 .navbar-header {
     float: none;
 }
 
-/* MAIN */
-/* MOTTO */
+
+/* HERO */
 .hero {
     background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
-    background-size: 140%;
+    background-size: cover;
     background-position: center;
     margin-top: 64px;
-    padding: 200px 0;
+    padding: 150px 0px;
 }
 
 .hero .motto {
     color: #ffffff;
+    padding-bottom: 50px;
 }
 
 .hero .motto p {
@@ -101,7 +117,7 @@ p {
 }
 
 .hero .login > div {
-    width: 370px;
+    max-width: 370px;
     background-color: #ffffff;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -231,13 +247,13 @@ p {
     vertical-align: middle;
 }
 
+
 /* SERVICE DESCRIPTION */
 .service-description {
     margin-top: 30px;
 }
 
 .service-description .wrapper {
-    /* DA ACCORPARE */
     max-width: 780px;
     margin: auto;
 }
@@ -289,17 +305,18 @@ p {
 
 .service-description ul li a {
     color: rgba(3, 27, 78, 0.6);
+    text-decoration: none;
 }
 
 .service-description ul li a:active {
     color: rgba(3, 27, 78, 1);
 }
 
+
 /* DEVELOPERS */
 .developers {
     background-color: #f3f5f9;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0
 }
 
 .developers .top {
@@ -334,6 +351,7 @@ p {
     border-radius: 50%;
     height: 10px;
     width: 10px;
+    cursor: pointer;
 }
 
 .developers span:not(:last-of-type) {
@@ -344,13 +362,10 @@ p {
     background-color: #0069ff;
 }
 
+
 /* BUSINESS */
 .business {
     padding: 50px 0;
-}
-
-.business .container{
-    padding: 0 20px;
 }
 
 .business .row > div:not(:last-of-type) {
@@ -498,6 +513,7 @@ p {
     color: #1633ff;
 }
 
+
 /* DEVELOPEMENT */
 .developement {
     background-color: #f3f5f9;
@@ -531,6 +547,7 @@ p {
     border-radius: 50%;
     height: 10px;
     width: 10px;
+    cursor: pointer;
 }
 
 .developement .row > span:not(:last-of-type) {
@@ -544,6 +561,7 @@ p {
 .developement .row > p {
     margin: 30px auto;
     max-width: 760px;
+    padding: 0 25px;
 }
 
 .carousel {
@@ -551,8 +569,8 @@ p {
     border: 1px solid #f3f5f9;
     box-shadow: 0px 2px 4px rgba(1,14,40,0.05);
     max-width: 1000px;
-    margin: auto;
-    padding: 70px;
+    margin: 20px;
+    padding: 70px 20px;
     color: #5b6987;;
 }
 
@@ -576,20 +594,21 @@ p {
     margin-bottom: 30px;
 }
 
+
 /* NEW ACCOUNT */
 .create-account {
     background-image: url('https://prismic-io.s3.amazonaws.com/www-static/b4ba92a9-0956-484b-9a3f-68ef4d550fd4_bg-home-cta.svg');
-    padding: 50px;
+    padding: 50px 25px;
 }
 
 .create-account h2 {
-    float: left;
     font-size: 32px;
     color: #ffffff;
+    margin: 0;
+    line-height: 62px;
 }
 
 .create-account button {
-    float: right;
     background-color: #ffffff;
     padding: 20px;
     border: none;
@@ -597,12 +616,14 @@ p {
     color: #0069ff;
     font-family: 'SailecBold','san-serif';
     font-size: 16px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .create-account button:hover {
     background-color: rgba(225,225,225,0.9);
+    color: #0069ff;
 }
+
 
 /* FOOTER */
 footer {
@@ -613,13 +634,17 @@ footer {
 }
 
 .footer-top {
-    padding: 50px;
+    padding: 50px 25px;
 }
 
 .footer-top ul {
     float: left;
     width: 50%;
     color: rgba(255, 255, 255, 1);
+}
+
+.footer-top ul li:first-of-type {
+    margin-top: 20px;
 }
 
 .footer-top ul li {
@@ -637,7 +662,6 @@ footer {
 
 .footer-bottom {
     padding: 50px 0;
-    margin: 0 50px;
     border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
@@ -648,7 +672,7 @@ footer {
 .footer-bottom .credits p {
     font-size: 14px;
     display: inline-block;
-    margin-left: 25px;
+    margin: 15px;
 }
 
 .footer-bottom .social a {
@@ -668,26 +692,94 @@ footer {
     color: rgba(255, 255, 255, 1);
 }
 
-.footer-bottom .social a:last-of-type,  .footer-bottom .social a:nth-last-of-type(2){
-    height: 40px;
-    padding: 0;
-}
-
 .footer-bottom .social a img {
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
     filter: invert(52%) sepia(14%) saturate(317%) hue-rotate(184deg) brightness(98%) contrast(83%);
+    height: 40px;
+    padding: 8px 0;
 }
-
 
 .footer-bottom .social a img:hover  {
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
     filter: invert(100%) sepia(0%) saturate(7496%) hue-rotate(183deg) brightness(100%) contrast(93%);
 }
 
+/* COOCKIES */
+.coockies {
+    background-color: #031b4e;
+    color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    animation: coockies 2s ease-in-out;
+}
 
+.coockies .row {
+    padding: 25px;
+}
+
+.coockies p {
+    font-family: 'SailecRegular','san-serif';
+    font-size: 14px;
+}
+
+.coockies p a {
+    font-family: 'SailecLight','san-serif';
+    font-size: 14px;
+    color: #ffffff;
+    border-bottom: 1px dotted #ffffff;
+    text-decoration: none;
+}
+
+.coockies div > a {
+    font-family: 'SailecBold','san-serif';
+    font-size: 14px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #0069ff;
+}
+
+.coockies div > a:hover {
+    background-color: #1633ff;
+    color: #ffffff;
+}
+
+
+/* KEYFRAMES */
+@keyframes coockies {
+    from {bottom: -140px;}
+    to {bottom: 0px}
+}
+
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 768px){
     /* HERO */
     .hero .motto h1 {
         font-size: 58px;
         white-space: pre-line;
+    }
+
+    .hero .login > div {
+    width: 370px;
+    }
+
+    /* ACCOUNT */
+    .create-account {
+        text-align: justify;
+    }
+
+    .create-account h2 {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .create-account button {
+        float: right;
     }
 
     /* FOOTER */
@@ -703,7 +795,11 @@ footer {
 }
 
 @media screen and (min-width: 992px){
-    /* MOTTO */
+    /* HERO */
+    .hero {
+        background-size: 300%;
+    }
+
     .hero .motto {
         text-align: left;
     }
@@ -717,7 +813,6 @@ footer {
         margin-bottom: 0;
     }
 
-    /* BUSINESS */
     .business [class*="col-"] {
         text-align: left;
     }
@@ -735,7 +830,7 @@ footer {
     }
 
     .service-description ul li:first-of-type {
-        border-left: 4px solid #0169ff;
+        border-left: 3px solid #0169ff;
         border-bottom: none;
     }
 
@@ -757,7 +852,13 @@ footer {
     }
 }
 
+
 @media screen and (min-width: 1140px){
+    .wrapper {
+        max-width: 1170px;
+        margin: auto;
+    }
+
     /* NAVBAR */
     .navbar-nav {
         display: block;
@@ -826,12 +927,19 @@ footer {
 
     /* HERO */
     .hero {
-    margin-top: 109px;
+        background-size: 300%;
     }
 
     /* FOOTER */
     .footer-top {
-        padding: 50px 100px 50px 200px;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (min-width: 1140px) and (max-width:: 1199px){
+    /* HERO */
+    .hero {
+    margin-top: 68px;
     }
 }
 
@@ -864,7 +972,10 @@ footer {
     }
 
     .top-banner div a {
+        display: inline-block;
         line-height: 40px;
+        max-height: 40px;
+
     }
 
     .top-banner div a:after {
@@ -901,5 +1012,19 @@ footer {
     /* NAVBAR */
     .navbar {
         top: 41px;
+    }
+
+    /* HERO */
+    .hero {
+    margin-top: 109px;
+    }
+
+    .hero {
+        background-size: 140%;
+    }
+
+    .hero .motto {
+        color: #ffffff;
+        padding: 70px 0;
     }
 }
