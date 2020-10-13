@@ -705,7 +705,7 @@ footer {
 }
 
 /* COOCKIES */
-.coockies {
+#coockies {
     background-color: #031b4e;
     color: #ffffff;
     padding: 20px 0;
@@ -716,16 +716,16 @@ footer {
     animation: coockies 2s ease-in-out;
 }
 
-.coockies .row {
+#coockies .row {
     padding: 25px;
 }
 
-.coockies p {
+#coockies p {
     font-family: 'SailecRegular','san-serif';
     font-size: 14px;
 }
 
-.coockies p a {
+#coockies p a {
     font-family: 'SailecLight','san-serif';
     font-size: 14px;
     color: #ffffff;
@@ -733,7 +733,7 @@ footer {
     text-decoration: none;
 }
 
-.coockies div > a {
+#coockies div > button {
     font-family: 'SailecBold','san-serif';
     font-size: 14px;
     padding: 15px 20px;
@@ -743,9 +743,13 @@ footer {
     background-color: #0069ff;
 }
 
-.coockies div > a:hover {
+#coockies div > button:hover {
     background-color: #1633ff;
     color: #ffffff;
+}
+
+#coockies div > button:focus {
+    outline: none;
 }
 
 
